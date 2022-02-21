@@ -1,0 +1,23 @@
+.comment {
+  &__item {
+    width: 100%;
+    margin: 0 0 16px;
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    background: #f9f8fc;
+  }
+
+  &__publish {
+    margin: 0 0 0 auto;
+    color: #aaaaac;
+    font-size: 12px;
+  }
+
+  &__text {
+    padding: 24px 16px;
+  }
+}

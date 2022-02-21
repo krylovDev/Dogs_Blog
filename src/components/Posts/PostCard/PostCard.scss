@@ -1,0 +1,143 @@
+.post-card {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 10;
+
+  &__modal {
+    width: 800px;
+    min-height: 800px;
+    max-height: 800px;
+    background: #ffffff;
+    border-radius: 4px;
+    border: 1px solid #F1EFFA;
+    box-shadow: 0 0 2px rgba(167, 169, 192, 0.4), 0 3px 10px rgba(167, 169, 192, 0.3);
+
+    @media (max-width: 850px) {
+      width: 700px;
+      min-height: 600px;
+      max-height: 600px;
+    }
+
+    @media (max-width: 768px) {
+      width: 400px;
+    }
+
+    @media (max-width: 568px) {
+      width: 280px;
+      min-height: 500px;
+      max-height: 500px;
+    }
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    border-bottom: 1px solid #F1EFFA;
+  }
+
+  &__content {
+    overflow-y: scroll;
+    max-height: calc(800px - 85px);
+
+    @media (max-width: 850px) {
+      max-height: calc(600px - 85px);
+    }
+
+    @media (max-width: 568px) {
+      max-height: calc(500px - 85px);
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+
+  &__publish {
+    margin: 0 0 0 auto;
+    color: #aaaaac;
+    font-size: 12px;
+  }
+
+  &__tags {
+    display: flex;
+    align-items: center;
+    color: #aaaaac;
+    font-size: 12px;
+    padding: 16px;
+  }
+
+  &__tag {
+    color: #aaaaac;
+    font-size: 12px;
+    margin: 0 0 0 8px;
+  }
+
+  &__close {
+    margin-left: 16px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background: transparent;
+
+    svg {
+      fill: #000000;
+      width: 16px;
+      height: 16px;
+    }
+
+    &:hover,
+    &:focus {
+      svg {
+        fill: #1890ff;
+      }
+    }
+  }
+
+  &__text {
+    padding: 16px;
+  }
+}
+
+.comments {
+  width: 100%;
+
+  &__title {
+    margin: 0 0 16px;
+    padding: 0 16px;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__empty {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 80px;
+    color: #aaaaac;
+    font-size: 12px;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px;
+}

@@ -1,0 +1,49 @@
+.navigation {
+  &__auth {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__item {
+    padding: 0 24px;
+
+    &_signin {
+      border-right: 1px solid #F1EFFA;
+      padding-right: 32px;
+    }
+
+    a {
+      color: rgba(0, 0, 0, 0.85);
+
+      &:hover,
+      &:focus {
+        color: #1890ff;
+      }
+    }
+  }
+
+  ul {
+    border: none
+  }
+
+  &__logout {
+    margin-left: 32px;
+    border: none;
+    border-left: 1px solid #F1EFFA;
+    padding-left: 32px;
+    background: transparent;
+    cursor: pointer;
+
+    @media (max-width: 1024px) {
+      margin-left: 16px;
+      padding-left: 16px;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.theme-switch {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+
+  &__title {
+    font-size: 14px;
+    margin: 0 16px 0 0;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+}

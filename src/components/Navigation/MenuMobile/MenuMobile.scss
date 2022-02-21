@@ -1,0 +1,59 @@
+.menu {
+  position: relative;
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+
+  &__button {
+    border: 1px solid #1890ff;
+    color: #1890ff;
+    border-radius: 4px;
+    background: transparent;
+  }
+
+  &__list {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    width: 280px;
+    z-index: 10;
+    list-style: none;
+    border: 1px solid #eff2fa;
+    border-radius: 4px;
+  }
+
+  &__item {
+    padding: 16px;
+    border-bottom: 1px solid #eff2fa;
+    font-size: 16px;
+    line-height: 20px;
+
+    span {
+      margin-right: 8px;
+    }
+
+    button {
+      background: transparent;
+      border: none;
+      padding: 0;
+      color: #1890ff;
+      cursor: pointer;
+    }
+  }
+
+  &__logout {
+    font-size: 16px;
+    line-height: 20px;
+    border: none;
+    background: transparent;
+    color: #1890ff;
+   cursor: pointer;
+  }
+
+
+}
