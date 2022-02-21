@@ -1,6 +1,6 @@
 # Проект "Dogs Blog"
 Социальная сеть для собак и их хозяев. Есть возможность делиться и обмениться постами, фотографиями и комментариями друг с другом.
-
+### ДЕМО - https://dogs-blog.vercel.app/
 ### Технологии:
 - TypeScript
 - SCSS, CSS Modules
@@ -9,7 +9,6 @@
 - Redux-thunk
 - Ant Design
 ### Быстрый старт
-
 - Клонирование репозитория
 ```
 git clone https://github.com/vladimirkrylov01/Dogs_Blog.git
@@ -22,7 +21,6 @@ npm install
 ```
 npm start
 ```
-
 ### Особенности проекта:
 #####Ant Design
 #####Доступ к DummyApi
